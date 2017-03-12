@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>My Next Adventure</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+    <!-- Compiled and minified Materialize JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Personal CSS Override-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Personal Javascript -->
+    <script type="text/javascript" src="./js/app.js"></script>
+
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Navigation Bar -->
+        <nav class='navBar'>
+
+            <!-- Title -->
+            <h3 class='left title'> <a href='index.html' class='title'>
+              My Next Adventure</a>
+            </h3>
+
+            <!-- Dropdown Menu -->
+            <a class='navMenu dropdown-button hide-on-med-and-down right' data-activates='dropdown1'>More good stuff</a>
+            <a class='navMenuResp dropdown-button hide-on-large-only right' href='#' data-activates='dropdown1'>
+                <i class="material-icons">view_list</i></a>
+
+            <ul id="dropdown1" class=" right dropdown-content">
+                <li><a href='events.html' class='navLinks'>Home</a></li>
+                <li><a href='#events' class='navLinks'>Events</a></li>
+                <li><a href='#photos' class='navLinks'>Photos</a></li>
+                <li><a href='#gear' class='navLinks'>Gear</a></li>
+                <li><a href='#books' class='navLinks'>Books</a></li>
+            </ul>
+
+        </nav>
+
+        <!-- Initial Image -->
+        <section class="parallax-container headImage">
+            <div class="parallax"><img src="./images/mountainBiking.jpg"></div>
+        </section>
+
+    </header>
+
+    <main>
+
+        <!-- Brief Intro -->
+        <section class='intro'>
+
+            <p class='center container lgGrnText'>
+                What's your next adventure?
+                <br> Enter an outdoor activity and a location, and we'll get you started!
+            </p>
+
+            <!-- User Input Section -->
+            <form class="inputForm" action="index.html" method="post">
+
+                <section class="row container inputSection">
+
+                    <!-- Activity Input -->
+                    <div class='col s12 m12 l6 inputDiv activityInput'>
+                        <input type="text" id='activity' class='input' placeholder='Outdoor Activity'>
+                    </div>
+
+                    <!-- Location Input -->
+                    <div class='col s12 m12 l6 inputDiv locationInput'>
+                        <input type="text" id='location' class='input' placeholder='Location'>
+                    </div>
+
+                </section>
+
+            </form>
+
+        </section>
+
+        <!-- Webstite Description -->
+        <section class='col s12 sectionContainer'>
+
+            <p class='container section'>Mountain biking down Moroccan mountains or cycling around the neighborhood? Surfing Teahupoo or finding a local break? Climbing Yosemite or buying a first pair of climbing shoes? Whatever the size or skill level of your next adventure, we've
+                got you covered.
+                <i>My Next Adventure</i> is an easy way to find events, equipment, books, and photos all in one place. Have a look around and start a new adventure!
+            </p>
+
+        </section>
+
+        <!-- Photo Break  -->
+        <section class="parallax-container">
+            <div class="parallax"><img src="./images/surfing.jpg"></div>
+        </section>
+
+        <!-- Events Section -->
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <section id="events" class="collapsible-header  lgWtText ltGrnbackground waves-effect waves-light">
+                    <i class="material-icons left">expand_more</i>Events<i class="material-icons right">expand_more</i>
+                </section>
+
+                <section class="collapsible-body ltGrnbackground">
+                    <div class="carousel carousel-slider center" data-indicators="true">
+                        <div class="carousel-item text white-text" href="#one!">
+                            <h2 id='eventName1' class="lgWtText">Event Name</h2>
+                            <p id="eventDesc1" class="desc">Event Description</p>
+                            <p id="eventDist1" class="dist">Event's Distance </p>
+                            <p class="url"><a id="href1" href="#">Event URL </a></p>
+                        </div>
+
+                        <div class="carousel-item text white-text" href="#two!">
+                            <h2 id='eventName2' class="lgWtText">Event Name</h2>
+                            <p id="eventDesc2" class="desc">Event Description</p>
+                            <p id="eventDist2" class="dist">Event's Distance </p>
+                            <p class="url"><a id="href2" href="#">Event URL </a></p>
+                        </div>
+
+                        <div class="carousel-item text white-text" href="#three!">
+                            <h2 id='eventName3' class="lgWtText">Event Name</h2>
+                            <p id="eventDesc3" class="desc">Event Description</p>
+                            <p id="eventDist3" class="dist">Event's Distance </p>
+                            <p class="url"><a id="href3" href="#">Event URL </a></p>
+                        </div>
+
+                        <div class="carousel-item text white-text" href="#four!">
+                            <h2 id='eventName4' class="lgWtText">Event Name</h2>
+                            <p id="eventDesc4" class="desc">Event Description</p>
+                            <p id="eventDist4" class="dist">Event's Distance </p>
+                            <p class="url"><a id="href4" href="#">Event URL </a></p>
+                        </div>
+
+                        <div class="carousel-item text white-text" href="#five!">
+                            <h2 id='eventName5' class="lgWtText">Event Name</h2>
+                            <p id="eventDesc5" class="desc">Event Description</p>gear
+                            <p id="eventDist5" class="dist">Event's Distancegear/p> gear
+                                <p class="url"><a id="href5" gearef="#">Event URL </a></p>
+                        </div>
+                  </section>
+            </li>
+        </ul>
+
+        <!-- Photo Break  -->
+        <section class="parallax-container">
+            <div class="parallax"><img src="./images/hiking.jpg"></div>
+        </section>
+
+        <!-- Photos Section -->
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <section id="photos" class="collapsible-header lgWtText ltGrnbackground waves-effect waves-light">
+                    <i class="material-icons left">expand_more</i>Flickr Photos<i class="material-icons right">expand_more</i>
+                </section>
+
+                <section class="collapsible-body ltGrnbackground">
+                    <div class="carousel carousel-slider center" data-indicators="true">
+
+                        <div class="carousel-item photos text white-text" href="#one!">
+                            <img id="photo1" src="#" alt="Photo of your entered activity">
+                        </div>
+
+                        <div class="carousel-item photos text white-text" href="#one!">
+                            <img id="photo2" src="#" alt="Photo of your entered activity">
+                        </div>
+
+                        <div class="carousel-item photos text white-text" href="#one!">
+                            <img id="photo3" src="#" alt="Photo of your entered activity">
+                        </div>
+
+                        <div class="carousel-item photos text white-text" href="#one!">
+                            <img id="photo4" src="#" alt="Photo of your entered activity">
+                        </div>
+
+                        <div class="carousel-item photos text white-text" href="#one!">
+                            <img id="photo5" src="#" alt="Photo of your entered activity">
+                        </div>
+
+                    </div>
+                </section>
+            </li>
+        </ul>
+
+        <!-- Photo Break  -->
+        <section class="parallax-container">
+            <div class="parallax"><img src="./images/skiing.jpg"></div>
+        </section>
+
+        <!-- Equipment Section -->
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <section id="gear" class="collapsible-header lgWtText ltGrnbackground waves-effect waves-light">
+                    <i class="material-icons left">expand_more</i>Gear<i class="material-icons right">expand_more</i>
+                </section>
+
+                <section class="collapsible-body ltGrnbackground">
+                    <div class="carousel carousel-slider center" data-indicators="true">
+                        <div class="carousel-item  text white-text" href="#one!">
+                            <h2 id='gearName1' class="lgWtText">Product Name</h2>
+                            <img id="gearImg1" class="gearImg" src="#" alt="Product Image">
+                            <p id="gearPrice1" class="gearPrice">Price</p>
+                            <p id="gearDesc1" class="gearDesc">Product Description</p>
+                            <p id="gearRate1" class="gearRating">Average Rating</p>
+                            <p class="url"><a id="gearHref1" href="#">Sierra Trading Post Product Link</a></p>
+                        </div>
+
+                        <div class="carousel-item  text white-text" href="#two!">
+                            <h2 id='gearName2' class="lgWtText">Product Name</h2>
+                            <img id="gearImg2" class="gearImg" src="#" alt="Product Image">
+                            <p id="gearPrice2" class="gearPrice">Price</p>
+                            <p id="gearDesc2" class="gearDesc">Product Description</p>
+                            <p id="gearRate2" class="gearRating">Average Rating</p>
+                            <p class="url"><a id="gearHref2" href="#">Sierra Trading Post Product Link</a></p>
+                        </div>
+
+                        <div class="carousel-item  text white-text" href="#three!">
+                            <h2 id='gearName3' class="lgWtText">Product Name</h2>
+                            <img id="gearImg3" class="gearImg" src="#" alt="Product Image">
+                            <p id="gearDesc3" class="gearDesc">Product Description</p>
+                            <p id="gearRate3" class="gearRating">Average Rating</p>
+                            <p class="url"><a id="gearHref3" href="#">Sierra Trading Post Product Link </a></p>
+                        </div>
+
+                        <div class="carousel-item  text white-text" href="#four!">
+                            <h2 id='gearName4' class="lgWtText">Product Name</h2>
+                            <img id="gearImg4" class="gearImg" src="#" alt="Product Image">
+                            <p id="gearPrice4" class="gearPrice">Price</p>
+                            <p id="gearDesc4" class="gearDesc">Product Description</p>
+                            <p id="gearRate4" class="gearRating">Average Rating</p>
+                            <p class="url"><a id="gearHref4" href="#">Sierra Trading Post Product Link</a></p>
+                        </div>
+
+                        <div class="carousel-item  text white-text" href="#five!">
+                            <h2 id='gearName5' class="lgWtText">Product Name</h2>
+                            <img id="gearImg5" class="gearImg" src="#" alt="Product Image">
+                            <p id="gearPrice5" class="gearPrice">Price</p>
+                            <p id="gearDesc5" class="gearDesc">Product Description</p>
+                            <p id="gearRate5" class="gearRating">Average Rating</p>
+                            <p class="url"><a id="gearHref5" href="#">Sierra Trading Post Product Link</a></p>
+                        </div>
+
+                    </div>
+                </section>
+            </li>
+        </ul>
+
+        <!-- Photo Break  -->
+        <section class="parallax-container">
+            <div class="parallax"><img src="./images/cycling.jpg"></div>
+        </section>
+
+        <!-- Books Section -->
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <section id="books" class="collapsible-header lgWtText ltGrnbackground waves-effect waves-light">
+                    <i class="material-icons left">expand_more</i>Books<i class="material-icons right">expand_more</i>
+                </section>
+
+                <section class="collapsible-body ltGrnbackground">
+                    <div class="carousel carousel-slider center" data-indicators="true">
+                        <div class="carousel-item text white-text" href="#one!">
+                            <h2 id='bookTitle1' class="lgWtText">Book Title and Subtitle</h2>
+                            <p id="authors1" class="authors">authors</p>
+                            <img id="bookImg1" class="bookImg" src="#" alt="Book Image">
+                            <p id="bookDesc1" class="bookDesc">Book Description</p>
+                            <p class="url"><a id="bookHref1" href="#">Google Books Product Link</a></p>
+                        </div>
+
+                        <div class="carousel-item text white-text" href="#two!">
+                            <h2 id='bookTitle2' class="lgWtText">Book Title and Subtitle</h2>
+                            <p id="authors2" class="authors">authors</p>
+                            <img id="bookImg2" class="bookImg" src="#" alt="Book Image">
+                            <p id="bookDesc2" class="bookDesc">Book Description</p>
+                            <p class="url"><a id="bookHref2" href="#">Google Books Product Link</a></p>
+                        </div>
+
+                        <div class="carousel-item text white-text" href="#three!">
+                            <h2 id='bookTitle3' class="lgWtText">Book Title and Subtitle</h2>
+                            <p id="authors3" class="authors">authors</p>
+                            <img id="bookImg3" class="bookImg" src="#" alt="Book Image">
+                            <p id="bookDesc3" class="bookDesc">Book Description</p>
+                            <p class="url"><a id="bookHref3" href="#">Google Books Product </a></p>
+                        </div>
+
+                        <div class="carousel-item text white-text" href="#four!">
+                            <h2 id='bookTitle4' class="lgWtText">Book Title and Subtitle</h2>
+                            <p id="authors4" class="authors">authors</p>
+                            <img id="bookImg4" class="bookImg" src="#" alt="Book Image">
+                            <p id="bookDesc4" class="bookDesc">Book Description</p>
+                            <p class="url"><a id="bookHref4" href="#">Google Books Product Link</a></p>
+                        </div>
+
+                        <div class="carousel-item text white-text" href="#five!">
+                            <h2 id='bookTitle5' class="lgWtText">Book Title and Subtitle</h2>
+                            <p id="authors5" class="authors">authors</p>
+                            <img id="bookImg5" class="bookImg" src="#" alt="Book Image">
+                            <p id="bookDesc5" class="bookDesc">Book Description</p>
+                            <p class="url"><a id="bookHref5" href="#">Google Books Product Link</a></p>
+                        </div>
+
+                    </div>
+                </section>
+            </li>
+        </ul>
+
+        <!-- Photo Break  -->
+        <section class="parallax-container">
+            <div class="parallax"><img src="./images/running.jpg"></div>
+        </section>
+    </main>
+
+    <footer>
+        <nav class="navBarFoot">
+
+            <h3 class='left title'> <a href="index.html">My Next Adventure</a></h3>
+            <ul class="right footLinksContainer hide-on-small-only">
+                <li><a href='index.html' class='footLinks'>Home</a></li>
+                <li><a href='#events' class='footLinks'>Events</a></li>
+                <li><a href='#photos' class='footLinks'>Photos</a></li>
+                <li><a href='#gear' class='footLinks'>Gear</a></li>
+                <li><a href='#bookBreak' class='footLinks'>Books</a></li>
+            </ul>
+
+        </nav>
+
+        <section class="footer-copyright text center">
+            © Tim Cutter
+        </section>
+
+    </footer>
+
+</body>
+
+</html>
